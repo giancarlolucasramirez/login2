@@ -15,7 +15,10 @@ function login() {
         usuario = document.getElementById("usuario").value="";
         contraseña = document.getElementById("contraseña").value=""
     }
-
-
 }
 
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        login();
+    }
+});
